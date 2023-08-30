@@ -8,5 +8,6 @@ spring:
     config:
       server:
         git:
-          uri: C:/Users/User/Desktop/git-local-repo
+#          uri: C:/Users/User/Desktop/git-local-repo
+          uri: https://github.com/AE-OO/study_MSA_springCloudConfig
           default-label: master
