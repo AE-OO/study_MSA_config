@@ -8,4 +8,5 @@ spring:
     config:
       server:
         git:
-          uri: C:\Users\User\Desktop\git-local-repo
+          uri: C:/Users/User/Desktop/git-local-repo
+          default-label: master
