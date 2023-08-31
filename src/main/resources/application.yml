@@ -4,14 +4,25 @@ server:
 spring:
   application:
     name: config-service
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
   profiles:
     active: native
   cloud:
     config:
       server:
         native:
-          search-locations: file://${user.home}/Desktop/native-file-repo
+          search-locations: C:\Users\User\Desktop\native-file-repo
         git:
 #          uri: C:/Users/User/Desktop/git-local-repo
           uri: https://github.com/AE-OO/study_MSA_springCloudConfig
           default-label: master
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans, httptrace, busrefresh
